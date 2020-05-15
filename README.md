@@ -3,7 +3,9 @@
 fargateでlaravelを動かすためのコンテナ
 
 ```
-docker login
-docker build -t senbazuru/docker-php-buster .
-docker push senbazuru/docker-php-buster:latest
+git tag PHP74-v1.X
+git push origin PHP74-v1.X
 ```
+
+バージョンNoはインクリメントしてね  
+githubにpushすると自動的にビルドされてdockerhubに公開されるよー
